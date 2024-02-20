@@ -4,15 +4,31 @@ import Button from "./ContactBtn";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between shadow-md px-2 my-4 rounded-md">
+    <div className="flex justify-between flex-wrap shadow-md px-2 rounded-md fixed top-0 left-0 right-0 bg-white scroll-smooth z-50">
       <div className="py-5 px-10 text-4xl font-Verdana font-extrabold">
         <Heading title={"AK."} />
       </div>
-      <div className="flex justify-evenly w-3/6 py-5 text-xl content-center">
+      <div className="flex justify-evenly flex-wrap w-3/6 py-5 text-xl content-center">
         <NavItem title={"About"} />
         <NavItem title={"Projects"} />
-        <div className="bg-sky p-2 rounded-lg text-white fill-black-500">
-          <Button text={"Contact me"} />
+        <div className="flex justify-around place-items-center bg-sky px-8 py-2 rounded-lg text-white fill-black-500">
+          <div className="mr-4">
+            <Button text={"Contact"} />
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+          </svg>
         </div>
       </div>
     </div>

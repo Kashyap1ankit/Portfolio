@@ -14,10 +14,10 @@ export default {
       },
     },
     fontFamily: {
-      Inter: ["Inter", "sans-serif"],
-      InterTight: ["Inter Tight"],
-      Oswald: ["Oswald"],
+      // Inter: ["Inter", "sans-serif"],
+      Anta: ["Anta", "sans-serif"],
       Verdana: ["Verdana"],
+      Kanit: ["Kanit", "sans-serif"],
     },
     colors: {
       custom: "#4338ca",
