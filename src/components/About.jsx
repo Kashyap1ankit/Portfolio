@@ -15,7 +15,7 @@ export default function About() {
         <div className="text-lg antialiased ml-14 tracking-wider leading-surge mt-4 font-Verdana w-3/6 opacity-65">
           <Heading
             title={
-              "Hello, I'm Ankit, a ReactJS Developer with a passion for building responsive and beautiful websites. I will complete my graduation in 2025 in BCA (Bachelor's in Computer Application)"
+              "Hello, I'm Ankit, a FullStack Developer with a passion for building responsive and beautiful websites. I will complete my graduation in 2025 in BCA (Bachelor's in Computer Application)"
             }
           />
           <br />

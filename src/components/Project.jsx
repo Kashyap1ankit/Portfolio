@@ -87,9 +87,9 @@ export default function Project() {
         />
       </div>
 
-      <div className="mx-auto mt-16 bg-sky max-w-48 p-2 text-white rounded-md cursor-pointer hover:bg-skyLight">
+      {/* <div className="mx-auto mt-16 bg-sky max-w-48 p-2 text-white rounded-md cursor-pointer hover:bg-skyLight">
         <Button text={"See More"} />
-      </div>
+      </div> */}
     </div>
   );
 }

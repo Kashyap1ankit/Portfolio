@@ -6,6 +6,7 @@ import resume from "../assets/files/Update resume.pdf";
 import Image from "./image";
 import Download from "../assets/svg/download.svg";
 import Contact from "../assets/svg/contact.svg";
+import Ankit from "../assets/images/ankit.png";
 
 export default function Intro() {
   const el = useRef();
@@ -22,7 +23,7 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="flex justify-between flex-wrap mt-56">
+    <div className="flex justify-between flex-wrap mt-56 ">
       <div>
         <div className="text-2xl font-Verdana text-gray-600 leading-snug">
           <Heading title={"Hello !"} />
@@ -44,21 +45,20 @@ export default function Intro() {
               <Image link={Download} />
             </div>
           </div>
-          <div className=" bg-connect p-2 rounded-md text-white fill-black-500 min-w-36 text-center flex justify-around">
-            <Button text={"Connect me"} />
+          <a href="mailto:kashyap25ankit@gmail.com">
+            <div className=" bg-connect p-2 rounded-md text-white fill-black-500 min-w-36 text-center flex justify-around">
+              <Button text={"Connect me"} />
 
-            <div className="size-5 mt-1 invert-100">
-              <Image link={Contact} />
+              <div className="size-5 mt-1 invert-100">
+                <Image link={Contact} />
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 
       <div className="size-80 mr-52 mt-[-35px] rounded-full p-4 overflow-hidden shadow-lg">
-        <img
-          src="https://avatars.githubusercontent.com/u/121277178?s=400&u=97cd87a4820d4c38cabc115e658be0407bc1801d&v=4"
-          alt=""
-        />
+        <img src={Ankit} alt="" />
       </div>
     </div>
   );

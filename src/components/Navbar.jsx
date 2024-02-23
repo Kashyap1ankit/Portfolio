@@ -11,19 +11,22 @@ export default function NavBar({ handleEvent }) {
         <Heading title={"AK."} />
       </div>
 
-      <div className="flex justify-evenly flex-wrap w-3/6 py-5 text-xl content-center">
+      <div className="flex justify-evenly flex-wrap w-3/6  py-5 text-xl content-center">
         <NavItem handleClick={handleEvent[0]} title={"About"} />
         <NavItem handleClick={handleEvent[1]} title={"Projects"} />
+        <NavItem handleClick={handleEvent[2]} title={"Skills"} />
 
-        <div className="flex justify-around place-items-center bg-sky px-8 py-2 rounded-lg text-white fill-black-500">
-          <div className="mr-4">
-            <Button text={"Contact"} />
-          </div>
+        <a href="mailto:kashyap25ankit@gmail.com">
+          <div className="flex justify-around place-items-center bg-sky px-8 py-2 rounded-lg text-white  fill-black-500">
+            <div className="mr-4">
+              <Button text={"Contact"} />
+            </div>
 
-          <div className="size-6 invert-100">
-            <Image link={Profile} />
+            <div className="size-6 invert-100">
+              <Image link={Profile} />
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   );
