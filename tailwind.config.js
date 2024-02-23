@@ -2,6 +2,23 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "360px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "640px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "768px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1024px",
+      // => @media (min-width: 1280px) { ... }
+
+      "2xl": "1280px",
+      // => @media (min-width: 1536px) { ... }
+    },
+
     extend: {},
     container: {
       center: true,
@@ -25,7 +42,20 @@ export default {
       white: "white",
       download: "#246cb4",
       connect: "#049b2c",
+      gray: "#cbd5e1",
+      skyLight: "#0ea5e9",
+      pink: "#ff0066;",
+    },
+    invert: {
+      10: "0.1",
+      25: ".25",
+      50: ".5",
+      65: ".65",
+      75: ".75",
+      80: ".80",
+      100: "1",
     },
   },
+
   plugins: [],
 };
