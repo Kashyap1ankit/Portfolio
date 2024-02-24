@@ -14,7 +14,7 @@ export default function Card({ title, para, techstack, redirect, slides }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [current]);
@@ -25,11 +25,11 @@ export default function Card({ title, para, techstack, redirect, slides }) {
       </div>
 
       <div className="lg:px-6 sm:p-2 lg:py-4 sm:py-2">
-        <div className="font-bold lg:text-2xl sm:text-xl mt-4 mb-8">
+        <div className="font-bold lg:text-2xl xsm:text-xl mt-4 mb-8">
           {title}
         </div>
-        <p className="text-gray-700 sm:w-12/12 sm:text-sm text-base">{para}</p>
-        <div className="lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-2 lg:gap-4 sm:gap-4 mt-7">
+        <p className="text-gray-700 sm:w-12/12 xsm:text-sm text-base">{para}</p>
+        <div className="lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-2 lg:gap-4 sm:gap-4  xsm:grid xsm:grid-cols-2 xsm:gap-4 xsm:px-8 mt-7">
           {techstack.map((e) => {
             return (
               <p className="border border-gray-200 text-custom border-dashed rounded-full px-3 py-1 text-sm font-semibold ">
@@ -40,9 +40,9 @@ export default function Card({ title, para, techstack, redirect, slides }) {
         </div>
       </div>
 
-      <div className="flex flex-around mx-56 sm:mx-36 mt-4 mb-5 w-full">
+      <div className="flex flex-around mx-56 sm:mx-36 xsm:mx-28 mt-4 mb-5 w-full">
         <motion.div
-          className="size-8 mx-12 cursor-pointer"
+          className="sm:size-8 xsm:size-6 xsm:mb-4 mx-12 cursor-pointer"
           whileHover={{ rotate: 30, transition: { duration: 0.5 } }}
           whileTap={{ scale: 3 }}
         >
@@ -51,7 +51,7 @@ export default function Card({ title, para, techstack, redirect, slides }) {
           </a>
         </motion.div>
         <motion.div
-          className="size-8 cursor-pointer"
+          className="sm:size-8 xsm:size-6 xsm:mb-4 cursor-pointer"
           whileHover={{ rotate: 30, transition: { duration: 0.5 } }}
           whileTap={{ scale: 0.8 }}
         >

@@ -50,7 +50,7 @@ function App() {
 
   return (
     <RecoilRoot>
-      <div className="container sm:px-0 overflow-x-hidden">
+      <div className="container sm:px-0 overflow-x-hidden ">
         {/* Navbar section  */}
         <div className="lg:mt-4 lg:w-4/5 ">
           <NavBar handleEvent={[aboutScroll, projectScroll, skillScroll]} />
@@ -70,7 +70,7 @@ function App() {
         {/* About section  */}
 
         <motion.div
-          className="lg:mt-44 sm:mt-24 text-center"
+          className="lg:mt-44 xsm:mt-24 text-center"
           ref={aboutRef}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { duration: 1 } }}
@@ -81,7 +81,7 @@ function App() {
         {/* Project Section  */}
 
         <div
-          className="lg:mt-36 sm:mt-24 lg:mb-12 sm:mb-12 text-center"
+          className="lg:mt-36 xsm:mt-24 lg:mb-12 xsm:mb-12 text-center"
           ref={projectRef}
         >
           <Project />
@@ -103,7 +103,7 @@ function App() {
             right: 0,
             bottom: 0,
           }}
-          className="bg-gray size-12 lg:fixed lg:top-52 lg:right-0 sm:fixed sm:top-52 sm:right-0  h-fit"
+          className="bg-gray sm:size-12 sm:fixed sm:top-52 sm:left-80 sm:h-fit xsm:fixed xsm:bottom-0 xsm:left-0 xsm:w-full xsm:size-12"
         >
           <Side />
         </motion.div>
