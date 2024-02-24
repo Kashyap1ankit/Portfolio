@@ -11,17 +11,26 @@ export default function Side() {
   };
   return (
     <div className="sm:block xsm:grid xsm:grid-cols-3 xsm:gap-16 xsm:w-full">
-      <motion.div whileHover={animation} className="xsm:size-8 p-2 mt-2 mb-8">
+      <motion.div
+        whileHover={animation}
+        className="xsm:size-8 sm:size-12 p-2 mt-2 mb-8"
+      >
         <a href="https://github.com/Kashyap1ankit">
           <Image link={Github} />
         </a>
       </motion.div>
-      <motion.div whileHover={animation} className="xsm:size-8  p-2 mt-2 mb-8">
+      <motion.div
+        whileHover={animation}
+        className="xsm:size-8  sm:size-12 p-2 mt-2 mb-8"
+      >
         <a href="https://www.linkedin.com/in/ankit-kashyap-coder/">
           <Image link={Linkedin} />
         </a>
       </motion.div>
-      <motion.div whileHover={animation} className="xsm:size-8  p-2 mt-2 mb-8">
+      <motion.div
+        whileHover={animation}
+        className="xsm:size-8  sm:size-12 p-2 mt-2 mb-8"
+      >
         <a href="https://twitter.com/Ankitka38153827 ">
           <Image link={Twitter} />
         </a>
