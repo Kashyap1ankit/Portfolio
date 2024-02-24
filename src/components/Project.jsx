@@ -16,7 +16,7 @@ let quizSlides = [quiz1, quiz2, quiz3];
 export default function Project() {
   return (
     <div>
-      <div className="lg:text-5xl sm:text-4xl lg:mb-20 sm:mb-20 font-Kanit">
+      <div className="lg:text-5xl sm:text-4xl xsm:text-3xl lg:mb-20 xsm:mb-20 font-Kanit">
         <Heading title={"PROJECTS"} />
       </div>
 
