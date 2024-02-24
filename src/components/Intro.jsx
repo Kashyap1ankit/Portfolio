@@ -23,30 +23,34 @@ export default function Intro() {
   }, []);
 
   return (
-    <div className="flex justify-between flex-wrap mt-56 ">
-      <div>
-        <div className="text-2xl font-Verdana text-gray-600 leading-snug">
+    <div className="lg:flex lg:justify-between flex-row-reverse sm:block ">
+      <div className="lg:size-80 sm:size-28 lg:mr-32 sm:mx-auto lg:px-8 lg:m-auto sm:shadow-lg place-items-center lg:rounded-full sm:rounded-full">
+        <img src={Ankit} alt="" className="mt-24" />
+      </div>
+
+      <div className="sm:mt-12 sm:ml-0 lg:w-full ">
+        <div className="lg:text-4xl sm:text-2xl font-Verdana text-gray-600 lg:leading-snug sm:leading-normal">
           <Heading title={"Hello !"} />
         </div>
-        <div className="text-5xl font-Verdana font-extraboldb leading-snug">
+        <div className="lg:text-6xl sm:text-3xl font-Verdana font-extraboldb lg:leading-snug sm:leading-normal">
           <Heading title={"I'm Ankit Kashyap, a"} />
         </div>
 
-        <div className="text-5xl font-Verdana font-extraboldb leading-snug text-custom">
+        <div className="lg:text-6xl sm:text-3xl font-Verdana font-extraboldb lg:leading-snug sm:leading-normal text-custom">
           <span ref={el}></span>
         </div>
 
-        <div className="flex mt-8 flex-wrap">
-          <div className="bg-download p-2 rounded-md text-white mr-8 min-w-36 text-center flex justify-around">
-            <a href={resume} download="ankit-resume">
+        <div className="lg:flex lg:mt-8 lg:flex-wrap sm:flex sm:mt-8">
+          <a href={resume} download="ankit-resume">
+            <div className="bg-download p-2 rounded-md text-white lg:mr-8 sm:mr-4 lg:min-w-40 sm:min-w-28 text-center flex justify-around lg:text-xl sm:text-sm">
               <Button text={"Resume"} />
-            </a>
-            <div className="size-5 mt-1 invert-100">
-              <Image link={Download} />
+              <div className="size-5 mt-1 invert-100">
+                <Image link={Download} />
+              </div>
             </div>
-          </div>
+          </a>
           <a href="mailto:kashyap25ankit@gmail.com">
-            <div className=" bg-connect p-2 rounded-md text-white fill-black-500 min-w-36 text-center flex justify-around">
+            <div className=" bg-connect p-2 rounded-md text-white lg:min-w-40 sm:min-w-28 lg:text-xl sm:text-sm text-center flex justify-around">
               <Button text={"Connect me"} />
 
               <div className="size-5 mt-1 invert-100">
@@ -55,10 +59,6 @@ export default function Intro() {
             </div>
           </a>
         </div>
-      </div>
-
-      <div className="size-80 mr-52 mt-[-35px] rounded-full p-4 overflow-hidden shadow-lg">
-        <img src={Ankit} alt="" />
       </div>
     </div>
   );
