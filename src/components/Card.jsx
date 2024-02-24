@@ -2,23 +2,34 @@ import SimpleImageSlider from "react-simple-image-slider";
 import Github from "../assets/svg/github.svg";
 import Link from "../assets/svg/link.svg";
 import Image from "./image";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-export default function Card({ title, para, images, techstack, redirect }) {
+export default function Card({ title, para, techstack, redirect, slides }) {
+  const [current, setCurr] = useState(0);
+
+  let styles = {
+    width: "100%",
+  };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [current]);
   return (
-    <div className="max-w-lg rounded overflow-hidden shadow-lg ">
-      <SimpleImageSlider
-        width={502}
-        height={300}
-        images={images}
-        showBullets={true}
-        autoPlay={true}
-      />
-      <div className="px-6 py-4">
-        <div className="font-bold text-2xl mb-8">{title}</div>
+    <div className="lg:w-1/3 sm:w-full shadow-lg">
+      <div>
+        <img style={styles} src={slides[current]} alt="" />
+      </div>
 
-        <p className="text-gray-700 text-base">{para}</p>
-
-        <div className="grid grid-cols-4 gap-4 mt-7">
+      <div className="lg:px-6 sm:p-2 lg:py-4 sm:py-2">
+        <div className="font-bold lg:text-2xl sm:text-xl mt-4 mb-8">
+          {title}
+        </div>
+        <p className="text-gray-700 sm:w-12/12 sm:text-sm text-base">{para}</p>
+        <div className="lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-2 lg:gap-4 sm:gap-4 mt-7">
           {techstack.map((e) => {
             return (
               <p className="border border-gray-200 text-custom border-dashed rounded-full px-3 py-1 text-sm font-semibold ">
@@ -28,7 +39,8 @@ export default function Card({ title, para, images, techstack, redirect }) {
           })}
         </div>
       </div>
-      <div className="flex flex-around mx-80 mt-4 mb-5 w-full">
+
+      <div className="flex flex-around mx-56 sm:mx-36 mt-4 mb-5 w-full">
         <motion.div
           className="size-8 mx-12 cursor-pointer"
           whileHover={{ rotate: 30, transition: { duration: 0.5 } }}
@@ -38,7 +50,6 @@ export default function Card({ title, para, images, techstack, redirect }) {
             <Image link={Github} redirect={redirect[0]} />
           </a>
         </motion.div>
-
         <motion.div
           className="size-8 cursor-pointer"
           whileHover={{ rotate: 30, transition: { duration: 0.5 } }}
