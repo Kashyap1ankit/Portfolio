@@ -4,7 +4,7 @@ import Intro from "./components/Intro";
 import About from "./components/About";
 import Project from "./components/Project";
 import Side from "./components/Side";
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Skill from "./components/Skill";
 import { RecoilRoot } from "recoil";
@@ -52,7 +52,7 @@ function App() {
     <RecoilRoot>
       <div className="container sm:px-0 overflow-x-hidden ">
         {/* Navbar section  */}
-        <div className="lg:mt-4 lg:w-4/5 ">
+        <div className="md:mt-4 md:w-4/5 ">
           <NavBar handleEvent={[aboutScroll, projectScroll, skillScroll]} />
         </div>
 
@@ -103,7 +103,7 @@ function App() {
             right: 0,
             bottom: 0,
           }}
-          className="bg-gray sm:size-12 sm:fixed sm:top-52 sm:left-80 sm:h-fit xsm:fixed xsm:bottom-0 xsm:left-0 xsm:w-full xsm:size-12"
+          className="bg-gray xsm:fixed xsm:bottom-0 xsm:left-0 xsm:w-full xsm:size-12 sm:fixed sm:bottom-0 sm:left-0 sm:w-full sm:size-12 sm:h-fit md:fixed md:top-52 md:right-0 md:w-12 md:h-fit md:p-0"
         >
           <Side />
         </motion.div>

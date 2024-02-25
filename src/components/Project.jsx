@@ -20,7 +20,7 @@ export default function Project() {
         <Heading title={"PROJECTS"} />
       </div>
 
-      <div className="lg:flex sm:grid sm:grid-cols-1 sm:gap-20 sm:p-8 lg:flex-wrap lg:justify-evenly">
+      <div className="lg:grid lg:grid-cols-2 xl:gap-24 lg:gap-12 sm:grid sm:grid-cols-1 sm:gap-20 sm:p-8 lg:px-4 xl:p-12 lg:flex-wrap lg:justify-evenly">
         <Card
           slides={airSlides}
           title={"Airbnb Clone"}

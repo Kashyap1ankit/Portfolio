@@ -19,7 +19,7 @@ export default function Card({ title, para, techstack, redirect, slides }) {
     return () => clearInterval(interval);
   }, [current]);
   return (
-    <div className="lg:w-1/3 sm:w-full shadow-lg">
+    <div className="lg:w-full sm:w-full shadow-lg">
       <div>
         <img style={styles} src={slides[current]} alt="" />
       </div>
@@ -29,7 +29,7 @@ export default function Card({ title, para, techstack, redirect, slides }) {
           {title}
         </div>
         <p className="text-gray-700 sm:w-12/12 xsm:text-sm text-base">{para}</p>
-        <div className="lg:grid lg:grid-cols-3 sm:grid sm:grid-cols-2 lg:gap-4 sm:gap-4  xsm:grid xsm:grid-cols-2 xsm:gap-4 xsm:px-8 mt-7">
+        <div className="xl:grid xl:grid-cols-3 sm:grid sm:grid-cols-2 lg:gap-4 sm:gap-4  xsm:grid xsm:grid-cols-2 xsm:gap-4 xsm:px-8 mt-7">
           {techstack.map((e) => {
             return (
               <p className="border border-gray-200 text-custom border-dashed rounded-full px-3 py-1 text-sm font-semibold ">
@@ -40,7 +40,7 @@ export default function Card({ title, para, techstack, redirect, slides }) {
         </div>
       </div>
 
-      <div className="flex flex-around mx-56 sm:mx-36 xsm:mx-28 mt-4 mb-5 w-full">
+      <div className="flex flex-around xl:mx-96 lg:mx-48 sm:mx-36 xsm:mx-28 mt-4 mb-5 w-full">
         <motion.div
           className="sm:size-8 xsm:size-6 xsm:mb-4 mx-12 cursor-pointer"
           whileHover={{ rotate: 30, transition: { duration: 0.5 } }}
