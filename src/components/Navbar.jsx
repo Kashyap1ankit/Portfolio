@@ -5,7 +5,7 @@ import Image from "./image";
 import Profile from "../assets/svg/profile.svg";
 import Three from "../assets/svg/three.svg";
 import Cross from "../assets/svg/cross.svg";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState } from "recoil";
 import { clickAtom } from "../store/atom";
 
 export default function NavBar({ handleEvent }) {

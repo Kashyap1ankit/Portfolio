@@ -16,7 +16,7 @@ export default function Side() {
         className="xsm:size-10 md:size-10 p-2 mt-2 md:mb-8"
       >
         <a href="https://github.com/Kashyap1ankit">
-          <Image link={Github} />
+          <img src={Github} alt="" />
         </a>
       </motion.div>
       <motion.div
@@ -24,7 +24,7 @@ export default function Side() {
         className="xsm:size-10  md:size-10 p-2 mt-2 md:mb-8"
       >
         <a href="https://www.linkedin.com/in/ankit-kashyap-coder/">
-          <Image link={Linkedin} />
+          <img src={Linkedin} alt="" />
         </a>
       </motion.div>
       <motion.div
@@ -32,7 +32,7 @@ export default function Side() {
         className="xsm:size-10  md:size-10 p-2 mt-2 md:mb-8"
       >
         <a href="https://twitter.com/Ankitka38153827 ">
-          <Image link={Twitter} />
+          <img src={Twitter} alt="" />
         </a>
       </motion.div>
     </div>
