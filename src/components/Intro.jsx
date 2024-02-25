@@ -53,7 +53,12 @@ export default function Intro() {
             <div className=" bg-connect p-2 rounded-md text-white lg:min-w-40 sm:min-w-28 md:min-w-36  xsm:min-w-32 lg:text-xl sm:text-sm text-center flex justify-around">
               <Button text={"Connect me"} />
 
-              <div className="size-5 mt-1 invert-100">
+              <div
+                onClick={(event) => {
+                  event.preventDefault();
+                }}
+                className="size-5 mt-1 invert-100"
+              >
                 <Image link={Contact} />
               </div>
             </div>
