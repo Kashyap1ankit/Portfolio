@@ -26,7 +26,7 @@ export default function NavBar({ handleEvent }) {
         <NavItem handleClick={handleEvent[2]} title={"Skills"} />
 
         <a href="mailto:kashyap25ankit@gmail.com">
-          <div onClick ={(event)=>{event.preventDefault();} className="lg:flex sm:flex xsm:flex lg:justify-around sm:justify-normal xsm:justify-normal  lg:place-items-center sm:place-items-left xsm:place-items-left bg-sky lg:px-8 sm:px-2  xsm:px-2 lg:py-2 xsm:py-2 lg:rounded-lg sm:rounded-md xsm:rounded-md text-white lg:w-fit sm:w-1/3 xsm:w-12/12 xsm:mb-8">
+          <div className="lg:flex sm:flex xsm:flex lg:justify-around sm:justify-normal xsm:justify-normal  lg:place-items-center sm:place-items-left xsm:place-items-left bg-sky lg:px-8 sm:px-2  xsm:px-2 lg:py-2 xsm:py-2 lg:rounded-lg sm:rounded-md xsm:rounded-md text-white lg:w-fit sm:w-1/3 xsm:w-12/12 xsm:mb-8">
             <div className="lg:mr-4 sm:mr-4 xsm:mr-4">
               <Button text={"Contact"} />
             </div>
