@@ -10,11 +10,6 @@ import Skill from "./components/Skill";
 import { RecoilRoot } from "recoil";
 
 function App() {
-  // smaller screen(640) -  yellow
-  // medium  screen(641-768) - blue
-  // large -(768-1024) - green
-  // xl (1024-1280) - red
-
   const aboutRef = useRef(null);
   const projectRef = useRef(null);
   const skillRef = useRef(null);
@@ -36,13 +31,14 @@ function App() {
     "Css",
     "Javascript",
     "React Js",
+    "Typescript",
     "Tailwind Css",
     "Bootstrap",
     "Express Js",
     "Nodejs",
-    "SQL",
+    "MYSQL",
+    "Postgres SQL",
     "MongoDb",
-    "MySQL",
     "Npm",
     "Git",
     "Restful Apis",
