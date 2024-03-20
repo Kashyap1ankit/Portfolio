@@ -3,9 +3,6 @@ import Heading from "./Heading";
 import airbnb1 from "../assets/images/airbnb/airbnb-1.png";
 import airbnb2 from "../assets/images/airbnb/airbnb-2.png";
 import airbnb3 from "../assets/images/airbnb/airbnb-3.png";
-import airbnb4 from "../assets/images/airbnb/airbnb-4.png";
-import airbnb5 from "../assets/images/airbnb/airbnb-5.png";
-import airbnb6 from "../assets/images/airbnb/airbnb-6.png";
 import quiz1 from "../assets/images/quiz/quiz-1.png";
 import quiz2 from "../assets/images/quiz/quiz-2.png";
 import quiz3 from "../assets/images/quiz/quiz-3.png";
@@ -16,20 +13,13 @@ let quizSlides = [quiz1, quiz2, quiz3];
 export default function Project() {
   return (
     <div>
-      <div className="lg:text-5xl sm:text-4xl xsm:text-3xl lg:mb-20 xsm:mb-20 font-Kanit">
+      <div className="lg:text-5xl sm:text-4xl xsm:text-3xl lg:mb-20 xsm:mb-12 font-Kanit">
         <Heading title={"PROJECTS"} />
       </div>
 
-      <div className="lg:grid lg:grid-cols-2 xl:gap-24 lg:gap-12 sm:grid sm:grid-cols-1 sm:gap-20 sm:p-8 lg:px-4 xl:p-12 lg:flex-wrap lg:justify-evenly">
+      <div className="xsm:grid xsm:grid-cols-1 xsm:gap-8 xsm:p-0 lg:grid lg:grid-cols-2 xl:gap-24 lg:gap-12  lg:px-4 xl:p-12 lg:flex-wrap lg:justify-evenly">
         <Card
           slides={airSlides}
-          title={"Airbnb Clone"}
-          para=" 🚀Explore a vibrant Airbnb clone 🌍This platform lets users register,list homes and
-          discover diverse listings. Real-time authorization and authentication
-          ensure a secure environment 🔒. It's a dynamic space to
-          filter and search for accommodations by category or name 🏨. Dive into
-          a world of seamless travel experiences with our Airbnb-inspired
-          platform! "
           techstack={[
             "#Html",
             "#Css",
